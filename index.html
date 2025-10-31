@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jai Furniture</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="images/logo-placeholder.png" alt="Jai Furniture Logo" class="logo"/>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#products">Products</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="slideshow">
+      <div class="slide active" style="background-image: url('images/Home1.png');"></div>
+      <div class="slide" style="background-image: url('images/Home2.png');"></div>
+      <div class="slide" style="background-image: url('images/Home3.png');"></div>
+      <div class="slide" style="background-image: url('images/Home4.png');"></div>
+    </div>
+    <div class="hero-content">
+      <h1>Welcome to Jai Furniture</h1>
+      <p class="quote">"Crafting timeless furniture with heart and hands."</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Jai Furniture is a family-run carpentry business crafting beautiful, durable furniture since 1982. Our mission is to bring warmth and elegance to your home with quality woodwork, customized to your needs.</p>
+      
+      <div class="about-images">
+        <div class="about-item">
+          <img src="images/about1.jpg" alt="Teak Wood Chair" />
+          <h3>Jai Shanker</h3>
+          <h4>Founder/Owner</h4>
+          <p>"I’m Shanker, and I started this business in 1982 with a deep love for woodworking and a passion for crafting beautiful, lasting furniture."</p>
+        </div>
+        <div class="about-item">
+          <img src="images/about2.jpg" alt="Teak Wood Table" />
+          <h3>Shantha Vignesh</h3>
+          <h4>CEO/Adviser</h4>
+          <p>"I’ve been running the business for the past two years, and now I’m mainly maintaining it and keeping things steady."</p>
+        </div>
+        <div class="about-item">
+          <img src="images/about3.jpg" alt="Teak Wood Cabinet" />
+          <h3>Yokesh Waran</h3>
+          <h4>Partner</h4>
+          <p>"My father, Shanker, started this business in 1982. His love for wood and craftsmanship built Jai Furniture from the ground up. He’s the heart behind everything we do."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="products">
+  <div class="container">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-item">
+        <img src="images/product-cot.jpg" alt="Wooden Cart">
+        <h3>Wooden Cart</h3>
+      </div>
+      <div class="product-item">
+        <img src="images/product-bench.jpg" alt="Wooden Bench">
+        <h3>Wooden Bench</h3>
+      </div>
+      <div class="product-item">
+        <img src="images/product-table.jpg" alt="Dining Table">
+        <h3>Dining Table</h3>
+      </div>
+      <div class="product-item">
+        <img src="images/product-sofa.jpg" alt="Wooden Sofa">
+        <h3>Wooden Sofa</h3>
+      </div>
+      <div class="product-item">
+        <img src="images/product-wall.jpg" alt="Wooden Wall Panel">
+        <h3>Wall Panel</h3>
+      </div>
+      <div class="product-item">
+        <img src="images/product-roof.jpg" alt="Wooden Roof Design">
+        <h3>Roof Design</h3>
+      </div>
+      <div class="product-item">
+        <img src="images/product-kitchen.jpg" alt="Wooden Kitchen Setup">
+        <h3>Kitchen Setup</h3>
+      </div>
+      <div class="product-item">
+        <img src="images/product-cupboard.jpg" alt="Wooden Cupboard">
+        <h3>Cupboard</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="images/sample1.jpg" alt="Custom dining table">
+        <img src="images/sample2.jpg" alt="Handcrafted wardrobe">
+        <img src="images/sample3.jpg" alt="Wooden chair">
+        <img src="images/sample4.jpg" alt="Elegant TV stand">
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Custom Wood Furniture</li>
+        <li>Furniture Repair</li>
+        <li>Interior Woodwork</li>
+        <li>Restoration Projects</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>📞 Phone: +91 9597464680</p>
+      <p>📧 Email: jaifurniture@example.com</p>
+      <a class="whatsapp-button" href="https://wa.me/919597464680" target="_blank">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Jai Furniture. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Slideshow Script -->
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+
+    setInterval(() => {
+      slides[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % slides.length;
+      slides[currentIndex].classList.add('active');
+    }, 3000); // 3 seconds
+  </script>
+</body>
+</html>
